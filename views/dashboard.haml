@@ -1,2 +1,10 @@
 %a{ href: "/logout" }
   ログアウトする
+%form{ method: "post", action: "/-/post" }
+  %input{ type: "text", name: "title" }
+  %textarea{ name: "body" }
+  %input{ type: "submit" }
+
+- @notes.each do |notes|
+  %p #{notes.title}
+  %p #{notes.body}

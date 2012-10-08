@@ -15,4 +15,8 @@
     %script{ type: "text/javascript", src: "/js/js.js" }
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   %body
-    != yield
+    %div
+      != yield
+    <img src="#{session['image']}">
+    %p= session['token']
+    %p= session['secret']
