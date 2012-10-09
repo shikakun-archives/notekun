@@ -39,6 +39,10 @@ class Notes < Sequel::Model
       primary_key :id
       String :title
       Text :body
+      String :created_uid
+      String :created_nickname
+      Timestamp :created_at
+      Timestamp :updated_at
     end
   end
 end

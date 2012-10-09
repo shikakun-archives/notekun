@@ -6,5 +6,5 @@
   %input{ type: "submit" }
 
 - @notes.each do |notes|
-  %p #{notes.title}
-  %p #{notes.body}
+  %h3 #{notes.title}
+  %div= markdown(notes.body)

@@ -21,6 +21,7 @@ GEM
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
+    rdiscount (1.6.8)
     sequel (3.40.0)
     shotgun (0.9)
       rack (>= 1.0)
@@ -46,6 +47,7 @@ DEPENDENCIES
   mysql2
   omniauth
   omniauth-twitter
+  rdiscount
   sequel
   shotgun
   sinatra
